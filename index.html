@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAIshtek - 從韌性通訊到無人載具生態系</title>
+    <style>
+        :root {
+            --primary-color: #00a8e8;
+            --secondary-color: #003459;
+            --bg-dark: #00171f;
+            --text-light: #ffffff;
+            --text-gray: #b0b0b0;
+            --accent-gold: #ffd700;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 23, 31, 0.8), rgba(0, 23, 31, 0.8)), url('https://images.unsplash.com/photo-1508614589041-895b88991e3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--text-gray);
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--secondary-color);
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 168, 232, 0.2);
+        }
+
+        .card h3 {
+            color: var(--accent-gold);
+            margin-top: 0;
+        }
+
+        .roadmap {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .roadmap-item {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid var(--primary-color);
+            position: relative;
+        }
+
+        .roadmap-item::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            position: absolute;
+            top: -9px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        footer {
+            background: #000;
+            padding: 40px 10%;
+            text-align: center;
+            color: var(--text-gray);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #007ea7;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            section { padding: 50px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>mAIshtek</h1>
+        <p class="subtitle">從韌性通訊到無人載具生態系<br>The Future of Resilience Autonomy</p>
+        <a href="#about" class="btn">探索解決方案</a>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">五大核心機會</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>國防需求增長</h3>
+                <p>因應 NATO 軍費擴大及 NDAA 合規門檻，推動全球供應鏈重組市場機會。</p>
+            </div>
+            <div class="card">
+                <h3>台灣地緣優勢</h3>
+                <p>切入高資安通訊市場，打造全球信賴的非紅供應鏈核心。</p>
+            </div>
+            <div class="card">
+                <h3>全民防衛韌性</h3>
+                <p>強化消防救援與關鍵基礎設施的防護與復原能力，應對極端災害。</p>
+            </div>
+            <div class="card">
+                <h3>無人機軍民兩用</h3>
+                <p>隨 BVLOS 法規開放，驅動政府與商業市場對長距離可靠通訊的需求。</p>
+            </div>
+            <div class="card">
+                <h3>工業安全巡檢</h3>
+                <p>針對油氣、半導體與礦業等高風險場域，提供低延遲且高可靠的通訊保障。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="technology" style="background: rgba(255,255,255,0.05);">
+        <h2 class="section-title">技術護城河</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Mesh 韌性網路</h3>
+                <p>不依賴單一基站，節點具備「自我修復、動態路由、抗干擾」特性，適用於地下與山區。</p>
+            </div>
+            <div class="card">
+                <h3>DDS 去中心化通訊</h3>
+                <p>採用 DDS 標準實現低延遲、高可靠與極致彈性控制，支援 Swarm 群飛協作。</p>
+            </div>
+            <div class="card">
+                <h3>AI 智慧跳頻</h3>
+                <p>導入 Edge-AI 邊緣運算，即時偵測環境干擾源，由「被動規避」轉為「主動預判」。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap">
+        <h2 class="section-title">發展藍圖 & 里程碑</h2>
+        <div class="roadmap">
+            <div class="roadmap-item">
+                <h4>2026</h4>
+                <p>核心硬體商業化<br>達成初期 3,000 萬營收目標</p>
+            </div>
+            <div class="roadmap-item">
+                <h4>2027</h4>
+                <p>歐洲合規與 AI 導入<br>獲取 RED/CRA 認證，打入歐洲市場</p>
+            </div>
+            <div class="roadmap-item">
+                <h4>2028</h4>
+                <p>軟體賦能與資本躍升<br>建立 SaaS 訂閱收入，IPO Ready</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 mAIshtek. All rights reserved.</p>
+        <p>客製化域名：<a href="http://www.maishtek.com" style="color: var(--primary-color);">www.maishtek.com</a></p>
+    </footer>
+
+</body>
+</html>
